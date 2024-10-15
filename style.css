@@ -1,0 +1,443 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.header-text{
+	margin-top: 10%;
+	margin-left: 7%;
+	font-size: 30px;
+}
+
+.header-text h1{
+	font-size: 55px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-weight: 600;
+	margin-top: 20px;
+	color: lavenderblush
+}
+
+.header-text p{
+	font-size: 20px;
+	font-family: 'Courier New', Courier, monospace;
+	margin-top: 20px;
+	color: white
+}
+
+#About{
+	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(pink.jpg);
+	padding: 80px 0;
+	color:#000
+}
+
+.row{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.about-col-1{
+	flex-basis: 40%;
+}
+
+.about-col-1 img{
+	width: 105%;
+	border-radius: 15px;
+}
+
+.about-col-2{
+	flex-basis: 50%;
+}
+
+.sub-title{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 55px;
+	font-weight: 600;
+	color: lavenderblush;
+}
+
+.description{
+	color: white
+}
+
+
+/* #About{
+	/* padding: 2rem 9%;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(cloud.png);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+} */
+
+#Education{
+	background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(plain_pink.png);
+	/* height: 100vh; */
+	background-size: cover;
+	background-position: center;
+}
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(pink_copy.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+	/* font-family: cursive; */
+}
+
+ul li{
+	display: inline-block;
+	font-size: 18px;
+	font-family: 'Courier New', Courier, monospace;
+	justify-content: space-between;
+}
+
+ul li a{
+	text-decoration: none;
+	color: black !important;
+	font-weight: 200;
+	padding: 10px 20px;
+	border: 1px solid transparent;
+	/* transition: 0.6s ease; */
+	position: relative;
+}
+
+ul li a::after{
+    content:'';
+    width: 0;
+    height: 2px;
+    background: lavenderblush;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+
+ul li a:hover{
+	color: lavenderblush !important;
+}
+
+ul li a:hover::after{
+    width: 100%;  
+}
+
+/* ul li.active a{
+	background-color: none;
+	color: #fff !important;
+	font-size: 18px;
+} */
+
+
+/* 
+.navbar a:hover{
+	background-color: lavenderblush;
+	color: white !important;
+	text-decoration: underline;
+} */
+
+
+
+.logo img{
+	float: left;
+	width: 150px;
+	height: auto;
+}
+
+.main{
+	/* max-width: 1200px; */
+	margin-left: 5%;
+	margin-right: 5%;
+	/* margin: auto; */
+}
+
+/* .title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+.title{
+	color: #fce9ed;
+	font-size: 75px;
+} */
+
+.button{
+	position: absolute;
+	margin-left: 7%;
+	margin-top: 1%;
+	/* top: 55%;
+	left: 50%; */
+	/* transform: translate(-50%,50%); */
+}
+
+.btn{
+	border: 1px solid #fff;
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.6s ease;
+	font-family: cursive;
+}
+
+.btn:hover{
+	background-color: #fce9ed;
+	color: #000;
+}
+
+.c-item{
+	height: 770px;
+	font-family: 'Times New Roman', Times, serif;
+	/* color: lavenderblush !important; */
+}
+
+.c-item p{
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.c-img{
+	height: 78%; /* can change this to 100% to have the text overlay on the image */
+	/* object-fit: cover;
+  	object-position: bottom; */
+	opacity: 0.8
+}
+
+#Projects{
+	/* background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(plain_pink.png); */
+	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(pink.jpg);
+	padding: 80px 0;
+}
+
+.research-list{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 40px;
+	margin-top: 80px;
+}
+
+.research{
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+
+.research img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+	display: block;
+	transition: 0.5s;
+}
+
+.layer{
+	width: 100%;
+	height: 0;
+	background: linear-gradient(rgba(0,0,0,0.7), lavenderblush);
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	font-size: 14px;
+	transition: height 0.5s;
+}
+
+.layer h3{
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.layer a{
+	margin-top: 20px;
+	color: lavenderblush;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 60px;
+	background: #000;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.research:hover img{
+	transform: scale(1.1);
+}
+
+.research:hover .layer{
+	height: 100%;
+}
+
+.research h3{
+	color: lavenderblush;
+}
+
+.research p{
+	color: white;
+}
+
+.sub-title-research{
+	text-align: center;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: lavenderblush;
+	font-weight: 600;
+}
+
+.btn-projects{
+	display: block;
+	margin: 50px auto;
+	width: fit-content;
+	border: 1px solid #fff;
+	padding: 14px 50px;
+	border-radius: 6px;
+	text-decoration: none;
+	color: #fff;
+	transition: 0.6s ease;
+	font-family: cursive;
+}
+
+.btn-projects:hover{
+	background-color: #fce9ed;
+	color: #000;
+}
+
+#Experiences{
+	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(pink.jpg);
+	padding: 80px 0;
+}
+
+.sub-title-teaching{
+	text-align: center;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: lavenderblush;
+	font-weight: 600;
+}
+
+.sub-title2-teaching{
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+	color: white;
+	padding-top: 20px;
+}
+
+.experiences-list{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 40px;
+	margin-top: 60px;
+}
+
+.experiences-list div{
+	background: #262626;
+	color: white;
+	padding: 25px;
+	font-size: 13px;
+	font-weight: 300;
+	border-radius: 10px;
+	transition: background 0.5s, transform 0.5s;
+}
+
+.experiences-list div i{
+	font-size: 40px;
+	margin: 30px;
+}
+
+.experiences-list div h2{
+	font-size: 20px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.experiences-list div p{
+	color: gray;
+}
+
+
+.experiences-list div:hover{
+	background: lavenderblush;
+	color: black;
+	transform: translateY(-10px);
+}
+
+.responsive{
+	width: 100%;
+	height: auto;
+}
+
+.parallax{
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(pink.jpg);
+
+/* Full height */
+	height: 100%;
+
+/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* body {
+	padding: 25px;
+	background-color: white;
+	color: black;
+	/* font-size: 25px; */
+} */
+
+
+
+
+@media only screen and (max-width: 600px){
+	header {
+		background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(pink_copy.jpg);
+	}
+	.header-text{
+		margin-top: 10%;
+		font-size: 16px;
+	}
+	.header-text h1{
+		font-size: 30px;
+	}
+	.header-text p{
+		font-size: 16px;
+	}
+	.logo img{
+		display: none;
+	}
+	.c-img{
+		object-fit: cover;
+  		object-position: bottom;
+	}
+
+	/* .navbar-toggler{
+		position: absolute; 
+		top: 25px;
+		right: 5px;
+	} */
+}
+
+
+
+
+
+/*.about .row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding:2rem 0;
+	padding-bottom: 3rem;
+
+}*/
