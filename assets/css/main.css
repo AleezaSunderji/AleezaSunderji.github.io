@@ -601,6 +601,21 @@ section,
   }
 }
 
+@media (max-width: 767px) {
+  .hero .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* adds vertical spacing between links */
+    margin-top: 20px;
+  }
+
+  .hero .social-links a {
+    margin-right: 0; /* removes horizontal spacing */
+    width: 100%;     /* makes each button full width */
+    text-align: center;
+  }
+}
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
