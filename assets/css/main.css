@@ -700,7 +700,7 @@ section,
   color: #222;
   padding: 20px;
   border-radius: 8px;
-  display: inline-block; /* prevents full-width stretching */
+  display: block;
   margin-right: 26px;
 }
 
