@@ -700,8 +700,8 @@ section,
   color: #222;
   padding: 20px;
   border-radius: 8px;
-  display: block;
-  margin-right: 26px;
+  flex: 1 1 0%;         
+  width: 100%;
 }
 
 .tools {
